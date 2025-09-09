@@ -4,3 +4,21 @@ Employee that the access to the limited info only which are required only but Ma
 ---IN NEW UPDATE--
 I am going to add the file uploading in this in which employee have to upload daily work report and can send leave requirest which can be seen by the Manager and then Manager can reply from it's side able to see the leave request and the daily work report 
 
+---Main file ---
+Main file containt the object of the welcome screen only to kick start the code 
+ ---Screen Package----
+this folder contains three different views 
+1.Managerview -->view the Manager see after verification 
+2.Employeeview -->view that employee see after verrfication
+3.Welcomeview -->it contain the login view and verification of both the employee and tha Manager
+-----Data package---
+It contains the class for both employee and Manager through which we can create there object and can fetch the data from the database 
+It contains gets and sets and all other methods
+--------db--------
+Thid contains a single class which is responsoble for the making of the connection of java with the Database 
+it mainly contains the JDBC code 
+--------DAO------
+As its name suggest it contains all the menthoda for both the employww and the Manager through which we can fetch the data from the database
+
+
+
