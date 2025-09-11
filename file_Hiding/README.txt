@@ -11,5 +11,8 @@ the database it exit the program .
 To generate the otp using the random class creating the 4 digit number if the user enter the wrong otp the system give you unlimited try which i was thinking of removing making them a limited time may be about 3-4
 
 ------signup------
-It also used the same mechanism that i just mention above using the verification using otp through the email,it also check for the already existing email if the person is trying to signup with the already existing id 
+It also used the same mechanism that i just mention above using the verification using otp through the email,it also check for the already existing email if the person is trying to signup with the already existing id giving error to such cases.
+Once you have register your email then they can login 
+--------User View-----
+The user view have several option such as the list of the files that you have hidden, hiding a new file, unhiding a perticular file. At the time you want to unhide the system provide a list of the file that you hdden and then you can pass a perticular id in it in order to unhide that file.
 
