@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compressor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">File Compressor</h1>
+            <p class="subtitle">Compress your files quickly and securely</p>
+        </header>
+
+        <main class="main-content">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <h3>Drag & Drop your files here</h3>
+                <p class="upload-text">or click to browse</p>
+                <input type="file" id="fileInput" class="file-input" multiple>
+                <div class="supported-formats">
+                    <span>Supported: ZIP, GZIP, and all common file types</span>
+                </div>
+            </div>
+
+            <div class="compression-options" id="compressionOptions" style="display: none;">
+                <h4>Compression Settings</h4>
+                <div class="option-group">
+                    <label for="compressionType">Compression Type:</label>
+                    <select id="compressionType" class="form-select">
+                        <option value="zip">ZIP Archive</option>
+                        <option value="gzip">GZIP Compression</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="compressionLevel">Compression Level:</label>
+                    <select id="compressionLevel" class="form-select">
+                        <option value="fast">Fast (Less Compression)</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="maximum">Maximum (Best Compression)</option>
+                    </select>
+                </div>
+                <div class="file-info" id="fileInfo"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="compressBtn" class="btn btn-primary" disabled>
+                    Compress Files
+                </button>
+                <button id="resetBtn" class="btn btn-secondary">
+                    Reset
+                </button>
+            </div>
+
+            <div class="progress-container" id="progressContainer" style="display: none;">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Compressing...</div>
+            </div>
+
+            <div class="download-section" id="downloadSection" style="display: none;">
+                <div class="success-message">
+                    <div class="success-icon">✅</div>
+                    <h4>Compression Successful!</h4>
+                    <p>Your file has been compressed successfully.</p>
+                    <a id="downloadLink" class="btn btn-download">
+                        Download Compressed File
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Files are processed securely and are not stored on our servers</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
